@@ -1,0 +1,64 @@
+/* PlsFix Injectable Styles */
+
+/* Edit mode body indicator */
+body.plsfix-edit-mode {
+  cursor: crosshair;
+}
+
+body.plsfix-edit-mode * {
+  cursor: crosshair !important;
+}
+
+/* Selected element indicator */
+[data-plsfix-selected="true"] {
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: 2px;
+}
+
+/* Editable element styling */
+[contenteditable="true"] {
+  outline: 2px solid #10B981 !important;
+  outline-offset: 2px;
+  cursor: text !important;
+  background-color: rgba(16, 185, 129, 0.05);
+}
+
+/* Panel toggle button transition */
+#plsfix-panel-root {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+}
+
+/* Ensure overlays don't interfere with pointer events */
+#plsfix-overlay-container {
+  pointer-events: none;
+}
+
+#plsfix-overlay-container > * {
+  pointer-events: none;
+}
+
+#plsfix-edit-tooltip {
+  pointer-events: auto;
+}
+
+/* Animation for change indicator */
+@keyframes plsfix-change-pulse {
+  0% {
+    outline-color: #10B981;
+  }
+  50% {
+    outline-color: transparent;
+  }
+  100% {
+    outline-color: #10B981;
+  }
+}
+
+.plsfix-change-indicator {
+  animation: plsfix-change-pulse 0.5s ease-out;
+}
+
+/* Smooth transitions for panel */
+#plsfix-panel-root * {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
