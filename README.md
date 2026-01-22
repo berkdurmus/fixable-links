@@ -2,6 +2,12 @@
 
 Make any webpage editable without installing a browser extension. Create shareable "fixable links" that let anyone edit a page visually and create pull requests.
 
+
+https://github.com/user-attachments/assets/1787c278-1699-45f4-a3b7-de6defac8f27
+
+
+
+
 ## How It Works
 
 1. **Create a link** - Paste any URL to generate a fixable link (e.g., `plsfix.dev/f/abc123`)
